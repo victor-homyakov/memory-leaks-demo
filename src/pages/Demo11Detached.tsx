@@ -21,14 +21,14 @@ export default function Demo11Detached() {
             </p>
             <p>
                 <strong>Try:</strong>
-                <ul>
-                    <li> Performance monitor</li>
-                    <li>
-                        console <code>queryObjects(HTMLElement)</code>
-                    </li>
-                    <li> Memory → Detached elements</li>
-                </ul>
             </p>
+            <ul>
+                <li> Performance monitor</li>
+                <li>
+                    console <code>queryObjects(HTMLElement)</code>
+                </li>
+                <li> Memory → Detached elements</li>
+            </ul>
             <p>
                 <a href={CHROME_MEMORY_GUIDE}>{CHROME_MEMORY_GUIDE}</a>
             </p>

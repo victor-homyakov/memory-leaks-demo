@@ -33,17 +33,17 @@ export default function Demo12({ mode }: Demo12Props) {
                     </p>
                     <p>
                         <strong>Try:</strong>
-                        <ul>
-                            <li> Performance monitor</li>
-                            <li>
-                                <code>queryObjects(Object)</code> / <code>queryObjects(Function)</code>
-                            </li>
-                            <li>
-                                Memory → <strong>Allocations on timeline</strong> (
-                                <a href={CHROME_ALLOCATION_TIMELINE}>guide</a>)
-                            </li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li> Performance monitor</li>
+                        <li>
+                            <code>queryObjects(Object)</code> / <code>queryObjects(Function)</code>
+                        </li>
+                        <li>
+                            Memory → <strong>Allocations on timeline</strong> (
+                            <a href={CHROME_ALLOCATION_TIMELINE}>guide</a>)
+                        </li>
+                    </ul>
                 </>
             ) : (
                 <>
