@@ -14,6 +14,9 @@ export default function Home() {
                 <li>
                     <Link to="/demo-1-3">Demo 1.3 — Less obvious JS leak</Link>
                 </li>
+                <li>
+                    <Link to="/demo-1-4">Demo 1.4 — @boundMethod + debounce</Link>
+                </li>
             </ul>
         </main>
     );
