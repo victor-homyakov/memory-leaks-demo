@@ -3,20 +3,20 @@ import { MemoStableModalDemo } from "../demos/memoStableModal.tsx";
 
 const CHROME_MEMORY_GUIDE = "https://developer.chrome.com/docs/devtools/memory-problems/";
 
-export default function Demo33() {
+export default function Demo23() {
     return (
         <main style={{ padding: "1rem 1.5rem", maxWidth: "42rem" }}>
             <p>
                 <Link to="/">← Home</Link>
             </p>
-            <h1>Demo 3.3: useMemo/selectors</h1>
+            <h1>Demo 2.3: useMemo/selectors</h1>
             <MemoStableModalDemo />
             <p>
                 Uses <code>useMemo</code> and a tiny reselect-style cache. First open allocates; reopening the modal
                 should not grow the heap from this path alone.
             </p>
             <p>
-                Heavy derived data is memoized and shared across modal opens. Contrast with 3.1 when you take heap
+                Heavy derived data is memoized and shared across modal opens. Contrast with 2.1 when you take heap
                 snapshots or allocation timelines: stable pattern after the first allocation.
             </p>
             <p>

@@ -3,13 +3,13 @@ import { ModalLeakDemo } from "../demos/modalLeak.tsx";
 
 const CHROME_MEMORY_GUIDE = "https://developer.chrome.com/docs/devtools/memory-problems/";
 
-export default function Demo31() {
+export default function Demo21() {
     return (
         <main style={{ padding: "1rem 1.5rem", maxWidth: "42rem" }}>
             <p>
                 <Link to="/">← Home</Link>
             </p>
-            <h1>Demo 3.1: Modal leak</h1>
+            <h1>Demo 2.1: Modal leak</h1>
             <ModalLeakDemo />
             <p>
                 Open and close the modal repeatedly. Each mount registers global listeners; the ref callback never

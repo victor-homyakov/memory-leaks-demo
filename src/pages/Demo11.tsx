@@ -3,7 +3,7 @@ import { leakDetachedNodes } from "../demos/detachedElementsLeak.ts";
 
 const CHROME_MEMORY_GUIDE = "https://developer.chrome.com/docs/devtools/memory-problems/";
 
-export default function Demo11Detached() {
+export default function Demo11() {
     return (
         <main style={{ padding: "1rem 1.5rem", maxWidth: "42rem" }}>
             <p>

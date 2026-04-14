@@ -7,7 +7,7 @@ const BATCH_SIZE = 5;
 
 type Row = { id: string; attrName: string };
 
-export default function Demo32() {
+export default function Demo22() {
     const [generation, setGeneration] = useState(0);
     const [rows, setRows] = useState<Row[]>([]);
 
@@ -27,7 +27,7 @@ export default function Demo32() {
             <p>
                 <Link to="/">← Home</Link>
             </p>
-            <h1>Demo 3.2: data-* attributes</h1>
+            <h1>Demo 2.2: data-* attributes</h1>
             <p>
                 <button type="button" onClick={handleClick}>
                     Replace batch ({BATCH_SIZE} divs, new data-* names)
