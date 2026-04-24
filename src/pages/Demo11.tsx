@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { leakDetachedNodes } from "../demos/detachedElementsLeak.ts";
 
-const CHROME_MEMORY_GUIDE = "https://developer.chrome.com/docs/devtools/memory-problems/";
-
 export default function Demo11() {
     return (
         <main style={{ padding: "1rem 1.5rem", maxWidth: "42rem" }}>
@@ -23,15 +21,16 @@ export default function Demo11() {
                 <strong>Try:</strong>
             </p>
             <ul>
-                <li> Performance monitor</li>
+                <li>Performance monitor</li>
                 <li>
-                    console <code>queryObjects(HTMLElement)</code>
+                    <code>queryObjects(Object)</code>
+                    <br />
+                    <code>queryObjects(Function)</code>
+                    <br />
+                    <code>queryObjects(HTMLElement)</code>
                 </li>
-                <li> Memory → Detached elements</li>
+                <li>Detached elements</li>
             </ul>
-            <p>
-                <a href={CHROME_MEMORY_GUIDE}>{CHROME_MEMORY_GUIDE}</a>
-            </p>
         </main>
     );
 }

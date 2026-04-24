@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { leakJs, leakJs2 } from "../demos/jsHeapLeak.ts";
 
-const CHROME_MEMORY_GUIDE = "https://developer.chrome.com/docs/devtools/memory-problems/";
 const CHROME_ALLOCATION_TIMELINE = "https://developer.chrome.com/docs/devtools/memory-problems/allocation-profiler/";
 
 type Demo12Mode = "timeline" | "subtle";
@@ -40,8 +39,7 @@ export default function Demo12({ mode }: Demo12Props) {
                             <code>queryObjects(Object)</code> / <code>queryObjects(Function)</code>
                         </li>
                         <li>
-                            Memory → <strong>Allocations on timeline</strong> (
-                            <a href={CHROME_ALLOCATION_TIMELINE}>guide</a>)
+                            Allocations on timeline (<a href={CHROME_ALLOCATION_TIMELINE}>guide</a>)
                         </li>
                     </ul>
                 </>
@@ -57,13 +55,20 @@ export default function Demo12({ mode }: Demo12Props) {
                         still grows; pattern can look subtler when you compare profiles.
                     </p>
                     <p>
-                        <strong>Try:</strong> same tools as 1.2; compare allocation shapes with demo 1.2.
+                        <strong>Try:</strong>
                     </p>
+                    <ul>
+                        <li> Performance monitor</li>
+                        <li>
+                            <code>queryObjects(Object)</code> / <code>queryObjects(Function)</code>
+                        </li>
+                        <li>
+                            Allocations on timeline (<a href={CHROME_ALLOCATION_TIMELINE}>guide</a>)
+                        </li>
+                        <li>Compare allocation shapes with demo 1.2</li>
+                    </ul>
                 </>
             )}
-            <p>
-                <a href={CHROME_MEMORY_GUIDE}>{CHROME_MEMORY_GUIDE}</a>
-            </p>
         </main>
     );
 }

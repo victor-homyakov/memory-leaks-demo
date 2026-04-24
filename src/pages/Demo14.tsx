@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Child } from "../demos/demo14/Child.ts";
 
-const CHROME_MEMORY = "https://developer.chrome.com/docs/devtools/memory-problems/";
-
 export default function Demo14() {
     const [showTest, setShowTest] = useState(true);
 
@@ -43,11 +41,9 @@ export default function Demo14() {
                 <li>
                     <code>queryObjects(Function)</code>
                 </li>
-                <li>Memory heap snapshots — three snapshots</li>
+                <li>Memory — steady growth in JS heap</li>
+                <li>Three-snapshot technique</li>
             </ul>
-            <p>
-                <a href={CHROME_MEMORY}>{CHROME_MEMORY}</a>
-            </p>
         </main>
     );
 }

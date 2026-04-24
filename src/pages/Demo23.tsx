@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { MemoStableModalDemo } from "../demos/memoStableModal.tsx";
 
-const CHROME_MEMORY_GUIDE = "https://developer.chrome.com/docs/devtools/memory-problems/";
-
 export default function Demo23() {
     return (
         <main style={{ padding: "1rem 1.5rem", maxWidth: "42rem" }}>
@@ -23,12 +21,11 @@ export default function Demo23() {
                 <strong>Try:</strong>
             </p>
             <ul>
-                <li>Memory → Three-snapshot technique</li>
-                <li>Memory → Allocations on timeline</li>
+                <li>Three-snapshot technique</li>
+                <li>
+                    <code>useMemo</code> and a reselect-style cached selector - not a leak
+                </li>
             </ul>
-            <p>
-                <a href={CHROME_MEMORY_GUIDE}>{CHROME_MEMORY_GUIDE}</a>
-            </p>
         </main>
     );
 }

@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { ModalLeakDemo } from "../demos/modalLeak.tsx";
 
-const CHROME_MEMORY_GUIDE = "https://developer.chrome.com/docs/devtools/memory-problems/";
-
 export default function Demo21() {
     return (
         <main style={{ padding: "1rem 1.5rem", maxWidth: "42rem" }}>
@@ -24,21 +22,12 @@ export default function Demo21() {
             </p>
             <ul>
                 <li>
-                    <code>queryObjects(LeakyModalContent)</code> before / after several open-close cycles
+                    <code>queryObjects(HTMLElement)</code>
                 </li>
-                <li>
-                    <code>queryObjects(HTMLDivElement)</code>
-                </li>
-                <li>Performance monitor — JS event listeners, DOM nodes</li>
-                <li>Memory → Detached elements</li>
-                <li>
-                    Memory → Heap snapshot → filter «Detached» → find <code>Detached HTMLDivElement</code>.
-                </li>
-                <li>Memory → Three-snapshot technique</li>
+                <li>Allocations on timeline</li>
+                <li>Three-snapshot technique</li>
+                <li>React DevTools, Web Vitals and other extensions add noise - better in incognito mode</li>
             </ul>
-            <p>
-                <a href={CHROME_MEMORY_GUIDE}>{CHROME_MEMORY_GUIDE}</a>
-            </p>
         </main>
     );
 }

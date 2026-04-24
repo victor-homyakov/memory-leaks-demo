@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const CHROME_MEMORY_GUIDE = "https://developer.chrome.com/docs/devtools/memory-problems/";
-
 const BATCH_SIZE = 5;
 
 type Row = { id: string; attrName: string };
@@ -49,12 +47,9 @@ export default function Demo22() {
             <p>
                 <strong>Try:</strong>
                 <ul>
-                    <li>Memory → Allocations on timeline</li>
-                    <li>Memory → Three-snapshot technique</li>
+                    <li>Allocations on timeline</li>
+                    <li>Three-snapshot technique</li>
                 </ul>
-            </p>
-            <p>
-                <a href={CHROME_MEMORY_GUIDE}>{CHROME_MEMORY_GUIDE}</a>
             </p>
         </main>
     );
