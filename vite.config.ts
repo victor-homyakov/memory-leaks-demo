@@ -29,7 +29,7 @@ function legacyDecoratorsDemo14(): Plugin {
                 ],
                 plugins: [
                     ["@babel/plugin-proposal-decorators", { legacy: true }],
-                    "@babel/plugin-transform-class-properties",
+                    // "@babel/plugin-transform-class-properties",
                 ],
                 sourceMaps: true,
             });
